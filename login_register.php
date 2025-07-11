@@ -6,7 +6,7 @@ require_once 'config.php';
 if (isset($_POST['register'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $password = passworld_hash($_POST['password'], PASSWORD_DEFAULT);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $role = $_POST['role'];
 
     $checkEmail = $conn->query("SELECT email FROM users WHERE email='$email'");
@@ -18,6 +18,7 @@ if (isset($_POST['register'])) {
     }
     header("Location: index.php");
     exit();
+}
 
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
