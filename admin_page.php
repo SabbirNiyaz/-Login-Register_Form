@@ -15,10 +15,9 @@ if (!isset($_SESSION['email'])) {
 </head>
 <body style="background-color: #fff;">
     <div class="box">
-        <h1>Welcome, <span><?= $_SESSION['name']; ?></h1>
+        <h1>Welcome, <span><?= $_SESSION['name']; ?></span></h1>
         <P>This is an <span>admin</span> page.</P>
         <button onclick="window.location.href='logout.php'">Logout</button>
-
     </div>
 </body>
 </html>
