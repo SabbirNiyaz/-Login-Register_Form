@@ -97,6 +97,8 @@ p a:hover {
 
 h1 {
     font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 span {
@@ -107,8 +109,9 @@ span {
     font-size: 22px;
 }
 
-.box button {
+/* .box button {
     display: block;
     width: 300px;
     margin: 0 auto;
-}
+} */
+
