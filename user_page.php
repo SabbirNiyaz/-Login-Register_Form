@@ -14,8 +14,8 @@ if (!isset($_SESSION['email'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #fff;">
-    <div class="box">
-        <h1>Welcome, <span><?= $_SESSION['name']; ?></span></h1>
+    <div class="container" class="box">
+        <h1>Welcome, <span><?= $_SESSION['name']; ?></span>!</h1>
         <p>This is an <span>user</span> page.</p>
         <button onclick="window.location.href='logout.php'">Logout</button>
     </div>
